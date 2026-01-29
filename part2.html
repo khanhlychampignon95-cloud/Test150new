@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang='vi'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>K30 Medical English – Part 2 (Câu 31–60)</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,Arial;max-width:900px;margin:auto;padding:16px}
+.q{border-bottom:1px solid #ddd;padding:14px 0}
+label{display:block;padding:6px 0}
+.correct{color:#0a8a0a;font-weight:600}
+.wrong{color:#c00;font-weight:600}
+.exp{display:none;background:#eef6ff;padding:10px;margin-top:8px;border-left:4px solid #0a84ff}
+#score{position:fixed;bottom:0;left:0;right:0;background:#0a84ff;color:#fff;padding:10px;text-align:center;font-weight:600}
+</style>
+<script>
+let correct=0, answered=0, total=30;
+
+function choose(q,sel,ans){
+ if(document.getElementById('q'+q).dataset.done) return;
+ document.getElementById('q'+q).dataset.done=1;
+ answered++;
+ if(sel===ans) correct++;
+ document.querySelectorAll('input[name="q'+q+'"]').forEach(r=>r.disabled=true);
+ document.getElementById('l_'+q+'_'+sel).classList.add(sel===ans?'correct':'wrong');
+ document.getElementById('l_'+q+'_'+ans).classList.add('correct');
+ document.getElementById('exp_'+q).style.display='block';
+ document.getElementById('score').innerText='Đúng: '+correct+' / '+total+' | Đã làm: '+answered+'/'+total;
+}
+</script></head><body>
+<h2>K30 Medical English – Part 2 (Câu 31–60)</h2>
+<div class='q' id='q1'><b>Câu 31. The doctor measured the patient’s _______ with a glucometer.</b>
+<label id='l_1_B'><input type='radio' name='q1' onclick="choose(1,'B','B')">B. blood sugar</label>
+<label id='l_1_D'><input type='radio' name='q1' onclick="choose(1,'D','B')">D. blood pressure</label>
+<label id='l_1_C'><input type='radio' name='q1' onclick="choose(1,'C','B')">C. cholesterol</label>
+<label id='l_1_A'><input type='radio' name='q1' onclick="choose(1,'A','B')">A. pulse</label>
+<div class='exp' id='exp_1'><b>Đáp án đúng:</b> B<br>Glucometer dùng để đo glucose máu, không đo mạch hay huyết áp.</div></div>
+<div class='q' id='q2'><b>Câu 32. The ophthalmologist diagnosed retinal _______.</b>
+<label id='l_2_C'><input type='radio' name='q2' onclick="choose(2,'C','C')">C. detachment</label>
+<label id='l_2_B'><input type='radio' name='q2' onclick="choose(2,'B','C')">B. direction</label>
+<label id='l_2_A'><input type='radio' name='q2' onclick="choose(2,'A','C')">A. digestion</label>
+<label id='l_2_D'><input type='radio' name='q2' onclick="choose(2,'D','C')">D. dilation</label>
+<div class='exp' id='exp_2'><b>Đáp án đúng:</b> C<br>Retinal detachment là bong võng mạc, bệnh lý mắt nghiêm trọng.</div></div>
+<div class='q' id='q3'><b>Câu 33. The surgeon made a precise _______ to access the abdomen.</b>
+<label id='l_3_A'><input type='radio' name='q3' onclick="choose(3,'A','B')">A. injection</label>
+<label id='l_3_B'><input type='radio' name='q3' onclick="choose(3,'B','B')">B. incision</label>
+<label id='l_3_D'><input type='radio' name='q3' onclick="choose(3,'D','B')">D. insertion</label>
+<label id='l_3_C'><input type='radio' name='q3' onclick="choose(3,'C','B')">C. infection</label>
+<div class='exp' id='exp_3'><b>Đáp án đúng:</b> B<br>Incision là đường rạch phẫu thuật; infection là nhiễm trùng.</div></div>
+<div class='q' id='q4'><b>Câu 34. The doctor prescribed an _______ to control hypertension.</b>
+<label id='l_4_C'><input type='radio' name='q4' onclick="choose(4,'C','C')">C. antihypertensive</label>
+<label id='l_4_B'><input type='radio' name='q4' onclick="choose(4,'B','C')">B. antifungal</label>
+<label id='l_4_A'><input type='radio' name='q4' onclick="choose(4,'A','C')">A. analgesic</label>
+<label id='l_4_D'><input type='radio' name='q4' onclick="choose(4,'D','C')">D. antacid</label>
+<div class='exp' id='exp_4'><b>Đáp án đúng:</b> C<br>Antihypertensive là thuốc điều trị tăng huyết áp.</div></div>
+<div class='q' id='q5'><b>Câu 35. The nurse inserted a urinary _______ for drainage.</b>
+<label id='l_5_B'><input type='radio' name='q5' onclick="choose(5,'B','D')">B. syringe</label>
+<label id='l_5_C'><input type='radio' name='q5' onclick="choose(5,'C','D')">C. scalpel</label>
+<label id='l_5_D'><input type='radio' name='q5' onclick="choose(5,'D','D')">D. catheter</label>
+<label id='l_5_A'><input type='radio' name='q5' onclick="choose(5,'A','D')">A. monitor</label>
+<div class='exp' id='exp_5'><b>Đáp án đúng:</b> D<br>Urinary catheter dùng để dẫn lưu nước tiểu liên tục.</div></div>
+<div class='q' id='q6'><b>Câu 36. The child was vaccinated to prevent _______.</b>
+<label id='l_6_B'><input type='radio' name='q6' onclick="choose(6,'B','B')">B. measles</label>
+<label id='l_6_C'><input type='radio' name='q6' onclick="choose(6,'C','B')">C. fracture</label>
+<label id='l_6_A'><input type='radio' name='q6' onclick="choose(6,'A','B')">A. allergy</label>
+<label id='l_6_D'><input type='radio' name='q6' onclick="choose(6,'D','B')">D. swelling</label>
+<div class='exp' id='exp_6'><b>Đáp án đúng:</b> B<br>Measles (sởi) là bệnh truyền nhiễm có vaccine phòng ngừa.</div></div>
+<div class='q' id='q7'><b>Câu 37. The epidemiologist studied the disease _______.</b>
+<label id='l_7_D'><input type='radio' name='q7' onclick="choose(7,'D','B')">D. therapy</label>
+<label id='l_7_B'><input type='radio' name='q7' onclick="choose(7,'B','B')">B. outbreak</label>
+<label id='l_7_C'><input type='radio' name='q7' onclick="choose(7,'C','B')">C. injection</label>
+<label id='l_7_A'><input type='radio' name='q7' onclick="choose(7,'A','B')">A. treatment</label>
+<div class='exp' id='exp_7'><b>Đáp án đúng:</b> B<br>Outbreak nghĩa là bùng phát dịch bệnh trong cộng đồng.</div></div>
+<div class='q' id='q8'><b>Câu 38. A heart attack is also called a _______.</b>
+<label id='l_8_A'><input type='radio' name='q8' onclick="choose(8,'A','D')">A. angina</label>
+<label id='l_8_D'><input type='radio' name='q8' onclick="choose(8,'D','D')">D. myocardial infarction</label>
+<label id='l_8_B'><input type='radio' name='q8' onclick="choose(8,'B','D')">B. arrhythmia</label>
+<label id='l_8_C'><input type='radio' name='q8' onclick="choose(8,'C','D')">C. stroke</label>
+<div class='exp' id='exp_8'><b>Đáp án đúng:</b> D<br>Heart attack là thuật ngữ thông thường của myocardial infarction.</div></div>
+<div class='q' id='q9'><b>Câu 39. The anesthesiologist monitored vitals during the _______.</b>
+<label id='l_9_B'><input type='radio' name='q9' onclick="choose(9,'B','C')">B. fracture</label>
+<label id='l_9_C'><input type='radio' name='q9' onclick="choose(9,'C','C')">C. operation</label>
+<label id='l_9_D'><input type='radio' name='q9' onclick="choose(9,'D','C')">D. prescription</label>
+<label id='l_9_A'><input type='radio' name='q9' onclick="choose(9,'A','C')">A. symptom</label>
+<div class='exp' id='exp_9'><b>Đáp án đúng:</b> C<br>Anesthesiologist theo dõi sinh hiệu trong ca phẫu thuật.</div></div>
+<div class='q' id='q10'><b>Câu 40. The nurse reminded him not to eat _______ surgery.</b>
+<label id='l_10_D'><input type='radio' name='q10' onclick="choose(10,'D','B')">D. unless</label>
+<label id='l_10_A'><input type='radio' name='q10' onclick="choose(10,'A','B')">A. during</label>
+<label id='l_10_C'><input type='radio' name='q10' onclick="choose(10,'C','B')">C. although</label>
+<label id='l_10_B'><input type='radio' name='q10' onclick="choose(10,'B','B')">B. before</label>
+<div class='exp' id='exp_10'><b>Đáp án đúng:</b> B<br>Nhịn ăn trước mổ (NPO) để tránh hít sặc khi gây mê.</div></div>
+<div class='q' id='q11'><b>Câu 41. The patient received an intravenous _______ for dehydration.</b>
+<label id='l_11_D'><input type='radio' name='q11' onclick="choose(11,'D','C')">D. infection</label>
+<label id='l_11_C'><input type='radio' name='q11' onclick="choose(11,'C','C')">C. infusion</label>
+<label id='l_11_B'><input type='radio' name='q11' onclick="choose(11,'B','C')">B. incision</label>
+<label id='l_11_A'><input type='radio' name='q11' onclick="choose(11,'A','C')">A. injection</label>
+<div class='exp' id='exp_11'><b>Đáp án đúng:</b> C<br>Intravenous infusion là truyền dịch qua đường tĩnh mạch.</div></div>
+<div class='q' id='q12'><b>Câu 42. Which organ filters blood and produces urine?</b>
+<label id='l_12_A'><input type='radio' name='q12' onclick="choose(12,'A','B')">A. Lung</label>
+<label id='l_12_C'><input type='radio' name='q12' onclick="choose(12,'C','B')">C. Stomach</label>
+<label id='l_12_B'><input type='radio' name='q12' onclick="choose(12,'B','B')">B. Kidney</label>
+<label id='l_12_D'><input type='radio' name='q12' onclick="choose(12,'D','B')">D. Heart</label>
+<div class='exp' id='exp_12'><b>Đáp án đúng:</b> B<br>Thận lọc máu, điều hòa điện giải và sản xuất nước tiểu.</div></div>
+<div class='q' id='q13'><b>Câu 43. The orthopedic surgeon repaired the fractured _______.</b>
+<label id='l_13_B'><input type='radio' name='q13' onclick="choose(13,'B','B')">B. femur</label>
+<label id='l_13_A'><input type='radio' name='q13' onclick="choose(13,'A','B')">A. lung</label>
+<label id='l_13_D'><input type='radio' name='q13' onclick="choose(13,'D','B')">D. pancreas</label>
+<label id='l_13_C'><input type='radio' name='q13' onclick="choose(13,'C','B')">C. liver</label>
+<div class='exp' id='exp_13'><b>Đáp án đúng:</b> B<br>Femur là xương đùi, thường gặp trong chấn thương chỉnh hình.</div></div>
+<div class='q' id='q14'><b>Câu 44. The prescription was filled _______ the pharmacist.</b>
+<label id='l_14_A'><input type='radio' name='q14' onclick="choose(14,'A','C')">A. to</label>
+<label id='l_14_D'><input type='radio' name='q14' onclick="choose(14,'D','C')">D. over</label>
+<label id='l_14_C'><input type='radio' name='q14' onclick="choose(14,'C','C')">C. by</label>
+<label id='l_14_B'><input type='radio' name='q14' onclick="choose(14,'B','C')">B. in</label>
+<div class='exp' id='exp_14'><b>Đáp án đúng:</b> C<br>By dùng trong bị động để chỉ tác nhân thực hiện hành động.</div></div>
+<div class='q' id='q15'><b>Câu 45. The nephrologist monitored _______ function.</b>
+<label id='l_15_A'><input type='radio' name='q15' onclick="choose(15,'A','B')">A. spinal</label>
+<label id='l_15_B'><input type='radio' name='q15' onclick="choose(15,'B','B')">B. renal</label>
+<label id='l_15_D'><input type='radio' name='q15' onclick="choose(15,'D','B')">D. neural</label>
+<label id='l_15_C'><input type='radio' name='q15' onclick="choose(15,'C','B')">C. arterial</label>
+<div class='exp' id='exp_15'><b>Đáp án đúng:</b> B<br>Renal liên quan đến thận; nephrologist là bác sĩ chuyên khoa thận.</div></div>
+<div class='q' id='q16'><b>Câu 46. The surgeon inserted a _______ tube to help breathing.</b>
+<label id='l_16_A'><input type='radio' name='q16' onclick="choose(16,'A','D')">A. spinal</label>
+<label id='l_16_C'><input type='radio' name='q16' onclick="choose(16,'C','D')">C. nasal</label>
+<label id='l_16_B'><input type='radio' name='q16' onclick="choose(16,'B','D')">B. venous</label>
+<label id='l_16_D'><input type='radio' name='q16' onclick="choose(16,'D','D')">D. tracheal</label>
+<div class='exp' id='exp_16'><b>Đáp án đúng:</b> D<br>Tracheal tube (ống nội khí quản) giúp duy trì đường thở.</div></div>
+<div class='q' id='q17'><b>Câu 47. The surgeon removed the inflamed _______.</b>
+<label id='l_17_D'><input type='radio' name='q17' onclick="choose(17,'D','A')">D. lung</label>
+<label id='l_17_C'><input type='radio' name='q17' onclick="choose(17,'C','A')">C. kidney</label>
+<label id='l_17_B'><input type='radio' name='q17' onclick="choose(17,'B','A')">B. gallbladder</label>
+<label id='l_17_A'><input type='radio' name='q17' onclick="choose(17,'A','A')">A. appendix</label>
+<div class='exp' id='exp_17'><b>Đáp án đúng:</b> A<br>Viêm ruột thừa là chỉ định phẫu thuật phổ biến.</div></div>
+<div class='q' id='q18'><b>Câu 48. The neurologist noted impaired motor _______.</b>
+<label id='l_18_A'><input type='radio' name='q18' onclick="choose(18,'A','A')">A. coordination</label>
+<label id='l_18_D'><input type='radio' name='q18' onclick="choose(18,'D','A')">D. circulation</label>
+<label id='l_18_C'><input type='radio' name='q18' onclick="choose(18,'C','A')">C. digestion</label>
+<label id='l_18_B'><input type='radio' name='q18' onclick="choose(18,'B','A')">B. respiration</label>
+<div class='exp' id='exp_18'><b>Đáp án đúng:</b> A<br>Tổn thương thần kinh thường gây giảm phối hợp vận động.</div></div>
+<div class='q' id='q19'><b>Câu 49. The doctor scheduled a follow-up appointment _______ next week.</b>
+<label id='l_19_B'><input type='radio' name='q19' onclick="choose(19,'B','A')">B. during</label>
+<label id='l_19_C'><input type='radio' name='q19' onclick="choose(19,'C','A')">C. by</label>
+<label id='l_19_A'><input type='radio' name='q19' onclick="choose(19,'A','A')">A. for</label>
+<label id='l_19_D'><input type='radio' name='q19' onclick="choose(19,'D','A')">D. on</label>
+<div class='exp' id='exp_19'><b>Đáp án đúng:</b> A<br>Schedule for + time dùng để chỉ lịch hẹn trong tương lai.</div></div>
+<div class='q' id='q20'><b>Câu 50. The medical team works to prevent hospital _______.</b>
+<label id='l_20_D'><input type='radio' name='q20' onclick="choose(20,'D','D')">D. infections</label>
+<label id='l_20_A'><input type='radio' name='q20' onclick="choose(20,'A','D')">A. gowns</label>
+<label id='l_20_B'><input type='radio' name='q20' onclick="choose(20,'B','D')">B. gloves</label>
+<label id='l_20_C'><input type='radio' name='q20' onclick="choose(20,'C','D')">C. operations</label>
+<div class='exp' id='exp_20'><b>Đáp án đúng:</b> D<br>Hospital-acquired infections là biến chứng cần phòng ngừa hàng đầu.</div></div>
+<div class='q' id='q21'><b>Câu 51. “Presbycusis” refers to:</b>
+<label id='l_21_D'><input type='radio' name='q21' onclick="choose(21,'D','D')">D. Hearing loss due to old age</label>
+<label id='l_21_A'><input type='radio' name='q21' onclick="choose(21,'A','D')">A. Hair loss due to old age</label>
+<label id='l_21_C'><input type='radio' name='q21' onclick="choose(21,'C','D')">C. Memory loss due to old age</label>
+<label id='l_21_B'><input type='radio' name='q21' onclick="choose(21,'B','D')">B. Vision loss due to old age</label>
+<div class='exp' id='exp_21'><b>Đáp án đúng:</b> D<br>Presbycusis là giảm thính lực do lão hóa, thường gặp ở người cao tuổi.</div></div>
+<div class='q' id='q22'><b>Câu 52. The patient complained ______ chest pain.</b>
+<label id='l_22_D'><input type='radio' name='q22' onclick="choose(22,'D','A')">D. for</label>
+<label id='l_22_A'><input type='radio' name='q22' onclick="choose(22,'A','A')">A. of</label>
+<label id='l_22_C'><input type='radio' name='q22' onclick="choose(22,'C','A')">C. with</label>
+<label id='l_22_B'><input type='radio' name='q22' onclick="choose(22,'B','A')">B. in</label>
+<div class='exp' id='exp_22'><b>Đáp án đúng:</b> A<br>Cụm cố định complain of + symptom dùng khi bệnh nhân than phiền triệu chứng.</div></div>
+<div class='q' id='q23'><b>Câu 53. Passive voice: “The incision ______ by the surgeon.”</b>
+<label id='l_23_D'><input type='radio' name='q23' onclick="choose(23,'D','A')">D. made</label>
+<label id='l_23_A'><input type='radio' name='q23' onclick="choose(23,'A','A')">A. was made</label>
+<label id='l_23_C'><input type='radio' name='q23' onclick="choose(23,'C','A')">C. is making</label>
+<label id='l_23_B'><input type='radio' name='q23' onclick="choose(23,'B','A')">B. has make</label>
+<div class='exp' id='exp_23'><b>Đáp án đúng:</b> A<br>Câu bị động quá khứ đơn: was + V3, phù hợp hành động đã xảy ra trong phẫu thuật.</div></div>
+<div class='q' id='q24'><b>Câu 54. Which term describes blue discoloration of the skin due to lack of oxygen?</b>
+<label id='l_24_A'><input type='radio' name='q24' onclick="choose(24,'A','C')">A. Erythema</label>
+<label id='l_24_C'><input type='radio' name='q24' onclick="choose(24,'C','C')">C. Cyanosis</label>
+<label id='l_24_D'><input type='radio' name='q24' onclick="choose(24,'D','C')">D. Pallor</label>
+<label id='l_24_B'><input type='radio' name='q24' onclick="choose(24,'B','C')">B. Jaundice</label>
+<div class='exp' id='exp_24'><b>Đáp án đúng:</b> C<br>Cyanosis là tình trạng da và môi tím do giảm oxy máu.</div></div>
+<div class='q' id='q25'><b>Câu 55. Which word pairs with “antibiotics” to describe a patient asking for them?</b>
+<label id='l_25_D'><input type='radio' name='q25' onclick="choose(25,'D','D')">D. Request</label>
+<label id='l_25_B'><input type='radio' name='q25' onclick="choose(25,'B','D')">B. Administer</label>
+<label id='l_25_C'><input type='radio' name='q25' onclick="choose(25,'C','D')">C. Cure</label>
+<label id='l_25_A'><input type='radio' name='q25' onclick="choose(25,'A','D')">A. Diagnose</label>
+<div class='exp' id='exp_25'><b>Đáp án đúng:</b> D<br>Request antibiotics nghĩa là bệnh nhân yêu cầu kháng sinh.</div></div>
+<div class='q' id='q26'><b>Câu 56. The patient was admitted ______ the hospital.</b>
+<label id='l_26_A'><input type='radio' name='q26' onclick="choose(26,'A','D')">A. in</label>
+<label id='l_26_D'><input type='radio' name='q26' onclick="choose(26,'D','D')">D. to</label>
+<label id='l_26_C'><input type='radio' name='q26' onclick="choose(26,'C','D')">C. on</label>
+<label id='l_26_B'><input type='radio' name='q26' onclick="choose(26,'B','D')">B. at</label>
+<div class='exp' id='exp_26'><b>Đáp án đúng:</b> D<br>Admit to the hospital là cụm chuẩn trong tiếng Anh y khoa.</div></div>
+<div class='q' id='q27'><b>Câu 57. A “sedative” is a drug that:</b>
+<label id='l_27_C'><input type='radio' name='q27' onclick="choose(27,'C','A')">C. Increases heart rate</label>
+<label id='l_27_A'><input type='radio' name='q27' onclick="choose(27,'A','A')">A. Calms and relaxes</label>
+<label id='l_27_D'><input type='radio' name='q27' onclick="choose(27,'D','A')">D. Causes vomiting</label>
+<label id='l_27_B'><input type='radio' name='q27' onclick="choose(27,'B','A')">B. Stimulates energy</label>
+<div class='exp' id='exp_27'><b>Đáp án đúng:</b> A<br>Sedative là thuốc an thần, làm dịu và giảm lo âu.</div></div>
+<div class='q' id='q28'><b>Câu 58. Which term describes a disease that cannot be cured?</b>
+<label id='l_28_D'><input type='radio' name='q28' onclick="choose(28,'D','B')">D. Acurable</label>
+<label id='l_28_A'><input type='radio' name='q28' onclick="choose(28,'A','B')">A. Discurable</label>
+<label id='l_28_B'><input type='radio' name='q28' onclick="choose(28,'B','B')">B. Incurable</label>
+<label id='l_28_C'><input type='radio' name='q28' onclick="choose(28,'C','B')">C. Uncurable</label>
+<div class='exp' id='exp_28'><b>Đáp án đúng:</b> B<br>Incurable là thuật ngữ đúng; các đáp án khác không chuẩn hoặc không tồn tại.</div></div>
+<div class='q' id='q29'><b>Câu 59. “Alopecia” is the medical term for:</b>
+<label id='l_29_B'><input type='radio' name='q29' onclick="choose(29,'B','C')">B. Dry skin</label>
+<label id='l_29_A'><input type='radio' name='q29' onclick="choose(29,'A','C')">A. Nail fungus</label>
+<label id='l_29_D'><input type='radio' name='q29' onclick="choose(29,'D','C')">D. Excessive sweating</label>
+<label id='l_29_C'><input type='radio' name='q29' onclick="choose(29,'C','C')">C. Hair loss</label>
+<div class='exp' id='exp_29'><b>Đáp án đúng:</b> C<br>Alopecia là thuật ngữ y khoa chỉ rụng tóc.</div></div>
+<div class='q' id='q30'><b>Câu 60. In a “triage” situation, a life-threatening injury is classified as:</b>
+<label id='l_30_A'><input type='radio' name='q30' onclick="choose(30,'A','C')">A. Non-urgent</label>
+<label id='l_30_D'><input type='radio' name='q30' onclick="choose(30,'D','C')">D. Minor</label>
+<label id='l_30_B'><input type='radio' name='q30' onclick="choose(30,'B','C')">B. Delayed</label>
+<label id='l_30_C'><input type='radio' name='q30' onclick="choose(30,'C','C')">C. Emergent / Immediate</label>
+<div class='exp' id='exp_30'><b>Đáp án đúng:</b> C<br>Triage ưu tiên cao nhất cho ca nguy kịch cần xử trí ngay.</div></div>
+<div id='score'>Đúng: 0 / 30 | Đã làm: 0/30</div></body></html>

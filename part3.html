@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang='vi'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>K30 Medical English – Part 3 (Câu 61–90)</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,Arial;max-width:900px;margin:auto;padding:16px}
+.q{border-bottom:1px solid #ddd;padding:14px 0}
+label{display:block;padding:6px 0}
+.correct{color:#0a8a0a;font-weight:600}
+.wrong{color:#c00;font-weight:600}
+.exp{display:none;background:#eef6ff;padding:10px;margin-top:8px;border-left:4px solid #0a84ff}
+#score{position:fixed;bottom:0;left:0;right:0;background:#0a84ff;color:#fff;padding:10px;text-align:center;font-weight:600}
+</style>
+<script>
+let correct=0, answered=0, total=30;
+
+function choose(q,sel,ans){
+ if(document.getElementById('q'+q).dataset.done) return;
+ document.getElementById('q'+q).dataset.done=1;
+ answered++;
+ if(sel===ans) correct++;
+ document.querySelectorAll('input[name="q'+q+'"]').forEach(r=>r.disabled=true);
+ document.getElementById('l_'+q+'_'+sel).classList.add(sel===ans?'correct':'wrong');
+ document.getElementById('l_'+q+'_'+ans).classList.add('correct');
+ document.getElementById('exp_'+q).style.display='block';
+ document.getElementById('score').innerText='Đúng: '+correct+' / '+total+' | Đã làm: '+answered+'/'+total;
+}
+</script></head><body>
+<h2>K30 Medical English – Part 3 (Câu 61–90)</h2>
+<div class='q' id='q1'><b>Câu 61. The doctor specializes ______ cardiology.</b>
+<label id='l_1_D'><input type='radio' name='q1' onclick="choose(1,'D','B')">D. on</label>
+<label id='l_1_C'><input type='radio' name='q1' onclick="choose(1,'C','B')">C. for</label>
+<label id='l_1_A'><input type='radio' name='q1' onclick="choose(1,'A','B')">A. at</label>
+<label id='l_1_B'><input type='radio' name='q1' onclick="choose(1,'B','B')">B. in</label>
+<div class='exp' id='exp_1'><b>Đáp án đúng:</b> B<br>Cụm cố định specialize in + chuyên ngành.</div></div>
+<div class='q' id='q2'><b>Câu 62. “Tinnitus” is described as:</b>
+<label id='l_2_B'><input type='radio' name='q2' onclick="choose(2,'B','B')">B. Ringing in the ears</label>
+<label id='l_2_D'><input type='radio' name='q2' onclick="choose(2,'D','B')">D. Ear pain</label>
+<label id='l_2_A'><input type='radio' name='q2' onclick="choose(2,'A','B')">A. Dizziness</label>
+<label id='l_2_C'><input type='radio' name='q2' onclick="choose(2,'C','B')">C. Loss of hearing</label>
+<div class='exp' id='exp_2'><b>Đáp án đúng:</b> B<br>Tinnitus là cảm giác ù tai hoặc nghe tiếng kêu trong tai.</div></div>
+<div class='q' id='q3'><b>Câu 63. The abbreviation “NPO” means:</b>
+<label id='l_3_D'><input type='radio' name='q3' onclick="choose(3,'D','C')">D. No previous operations</label>
+<label id='l_3_B'><input type='radio' name='q3' onclick="choose(3,'B','C')">B. Nightly per order</label>
+<label id='l_3_C'><input type='radio' name='q3' onclick="choose(3,'C','C')">C. Nothing by mouth</label>
+<label id='l_3_A'><input type='radio' name='q3' onclick="choose(3,'A','C')">A. New patient only</label>
+<div class='exp' id='exp_3'><b>Đáp án đúng:</b> C<br>NPO (nil per os) nghĩa là không ăn uống qua đường miệng.</div></div>
+<div class='q' id='q4'><b>Câu 64. “Gastroenteritis” is inflammation of the:</b>
+<label id='l_4_A'><input type='radio' name='q4' onclick="choose(4,'A','C')">A. Liver and gallbladder</label>
+<label id='l_4_D'><input type='radio' name='q4' onclick="choose(4,'D','C')">D. Kidney and bladder</label>
+<label id='l_4_C'><input type='radio' name='q4' onclick="choose(4,'C','C')">C. Stomach and intestines</label>
+<label id='l_4_B'><input type='radio' name='q4' onclick="choose(4,'B','C')">B. Heart and lungs</label>
+<div class='exp' id='exp_4'><b>Đáp án đúng:</b> C<br>gastro- là dạ dày, entero- là ruột, -itis là viêm.</div></div>
+<div class='q' id='q5'><b>Câu 65. Which term refers to the “voice box”?</b>
+<label id='l_5_A'><input type='radio' name='q5' onclick="choose(5,'A','C')">A. Trachea</label>
+<label id='l_5_D'><input type='radio' name='q5' onclick="choose(5,'D','C')">D. Esophagus</label>
+<label id='l_5_C'><input type='radio' name='q5' onclick="choose(5,'C','C')">C. Larynx</label>
+<label id='l_5_B'><input type='radio' name='q5' onclick="choose(5,'B','C')">B. Pharynx</label>
+<div class='exp' id='exp_5'><b>Đáp án đúng:</b> C<br>Larynx là thanh quản, cơ quan tạo âm thanh.</div></div>
+<div class='q' id='q6'><b>Câu 66. If the pain continues, you ______ call the office.</b>
+<label id='l_6_C'><input type='radio' name='q6' onclick="choose(6,'C','B')">C. could</label>
+<label id='l_6_A'><input type='radio' name='q6' onclick="choose(6,'A','B')">A. would</label>
+<label id='l_6_B'><input type='radio' name='q6' onclick="choose(6,'B','B')">B. should</label>
+<label id='l_6_D'><input type='radio' name='q6' onclick="choose(6,'D','B')">D. might</label>
+<div class='exp' id='exp_6'><b>Đáp án đúng:</b> B<br>Should dùng để đưa ra lời khuyên y khoa phù hợp.</div></div>
+<div class='q' id='q7'><b>Câu 67. A “chronic” condition is one that:</b>
+<label id='l_7_B'><input type='radio' name='q7' onclick="choose(7,'B','A')">B. Starts suddenly</label>
+<label id='l_7_D'><input type='radio' name='q7' onclick="choose(7,'D','A')">D. Is fatal</label>
+<label id='l_7_A'><input type='radio' name='q7' onclick="choose(7,'A','A')">A. Persists for a long time</label>
+<label id='l_7_C'><input type='radio' name='q7' onclick="choose(7,'C','A')">C. Is contagious</label>
+<div class='exp' id='exp_7'><b>Đáp án đúng:</b> A<br>Chronic là kéo dài lâu; acute mới là khởi phát đột ngột.</div></div>
+<div class='q' id='q8'><b>Câu 68. Which instrument is used to visually examine the ear?</b>
+<label id='l_8_B'><input type='radio' name='q8' onclick="choose(8,'B','B')">B. Otoscope</label>
+<label id='l_8_A'><input type='radio' name='q8' onclick="choose(8,'A','B')">A. Ophthalmoscope</label>
+<label id='l_8_D'><input type='radio' name='q8' onclick="choose(8,'D','B')">D. Microscope</label>
+<label id='l_8_C'><input type='radio' name='q8' onclick="choose(8,'C','B')">C. Stethoscope</label>
+<div class='exp' id='exp_8'><b>Đáp án đúng:</b> B<br>Otoscope là dụng cụ chuyên dùng để soi tai.</div></div>
+<div class='q' id='q9'><b>Câu 69. “Epistaxis” is the medical term for a:</b>
+<label id='l_9_C'><input type='radio' name='q9' onclick="choose(9,'C','B')">C. Headache</label>
+<label id='l_9_B'><input type='radio' name='q9' onclick="choose(9,'B','B')">B. Nosebleed</label>
+<label id='l_9_A'><input type='radio' name='q9' onclick="choose(9,'A','B')">A. Sore throat</label>
+<label id='l_9_D'><input type='radio' name='q9' onclick="choose(9,'D','B')">D. Runny nose</label>
+<div class='exp' id='exp_9'><b>Đáp án đúng:</b> B<br>Epistaxis là thuật ngữ y khoa chỉ chảy máu mũi.</div></div>
+<div class='q' id='q10'><b>Câu 70. Select the correct adjective form: “The patient has a ______ infection.”</b>
+<label id='l_10_C'><input type='radio' name='q10' onclick="choose(10,'C','D')">C. virous</label>
+<label id='l_10_D'><input type='radio' name='q10' onclick="choose(10,'D','D')">D. viral</label>
+<label id='l_10_A'><input type='radio' name='q10' onclick="choose(10,'A','D')">A. virul</label>
+<label id='l_10_B'><input type='radio' name='q10' onclick="choose(10,'B','D')">B. virusal</label>
+<div class='exp' id='exp_10'><b>Đáp án đúng:</b> D<br>Viral là tính từ đúng của virus.</div></div>
+<div class='q' id='q11'><b>Câu 71. The “mandible” is commonly known as the:</b>
+<label id='l_11_D'><input type='radio' name='q11' onclick="choose(11,'D','D')">D. Lower jaw</label>
+<label id='l_11_B'><input type='radio' name='q11' onclick="choose(11,'B','D')">B. Forehead</label>
+<label id='l_11_C'><input type='radio' name='q11' onclick="choose(11,'C','D')">C. Cheekbone</label>
+<label id='l_11_A'><input type='radio' name='q11' onclick="choose(11,'A','D')">A. Upper jaw</label>
+<div class='exp' id='exp_11'><b>Đáp án đúng:</b> D<br>Mandible là xương hàm dưới; maxilla là hàm trên.</div></div>
+<div class='q' id='q12'><b>Câu 72. “Hypoglycemia” means the patient has:</b>
+<label id='l_12_B'><input type='radio' name='q12' onclick="choose(12,'B','B')">B. Low blood sugar</label>
+<label id='l_12_D'><input type='radio' name='q12' onclick="choose(12,'D','B')">D. High blood pressure</label>
+<label id='l_12_A'><input type='radio' name='q12' onclick="choose(12,'A','B')">A. High blood sugar</label>
+<label id='l_12_C'><input type='radio' name='q12' onclick="choose(12,'C','B')">C. Low blood pressure</label>
+<div class='exp' id='exp_12'><b>Đáp án đúng:</b> B<br>Hypo- nghĩa là thấp, glycemia là đường huyết.</div></div>
+<div class='q' id='q13'><b>Câu 73. An “analgesic” drug is used to:</b>
+<label id='l_13_A'><input type='radio' name='q13' onclick="choose(13,'A','A')">A. Relieve pain</label>
+<label id='l_13_B'><input type='radio' name='q13' onclick="choose(13,'B','A')">B. Fight infection</label>
+<label id='l_13_D'><input type='radio' name='q13' onclick="choose(13,'D','A')">D. Reduce fever</label>
+<label id='l_13_C'><input type='radio' name='q13' onclick="choose(13,'C','A')">C. Stop bleeding</label>
+<div class='exp' id='exp_13'><b>Đáp án đúng:</b> A<br>Analgesic là thuốc giảm đau, không phải kháng sinh hay thuốc cầm máu.</div></div>
+<div class='q' id='q14'><b>Câu 74. The medication must be taken ______ an empty stomach.</b>
+<label id='l_14_A'><input type='radio' name='q14' onclick="choose(14,'A','B')">A. with</label>
+<label id='l_14_C'><input type='radio' name='q14' onclick="choose(14,'C','B')">C. by</label>
+<label id='l_14_B'><input type='radio' name='q14' onclick="choose(14,'B','B')">B. on</label>
+<label id='l_14_D'><input type='radio' name='q14' onclick="choose(14,'D','B')">D. in</label>
+<div class='exp' id='exp_14'><b>Đáp án đúng:</b> B<br>Cụm cố định on an empty stomach.</div></div>
+<div class='q' id='q15'><b>Câu 75. “Dyspnea” refers to:</b>
+<label id='l_15_D'><input type='radio' name='q15' onclick="choose(15,'D','A')">D. No breathing</label>
+<label id='l_15_A'><input type='radio' name='q15' onclick="choose(15,'A','A')">A. Difficult breathing</label>
+<label id='l_15_C'><input type='radio' name='q15' onclick="choose(15,'C','A')">C. Rapid breathing</label>
+<label id='l_15_B'><input type='radio' name='q15' onclick="choose(15,'B','A')">B. Slow breathing</label>
+<div class='exp' id='exp_15'><b>Đáp án đúng:</b> A<br>Dyspnea là thuật ngữ y khoa chỉ khó thở.</div></div>
+<div class='q' id='q16'><b>Câu 76. A patient with “hypertension” suffers from:</b>
+<label id='l_16_A'><input type='radio' name='q16' onclick="choose(16,'A','D')">A. Low blood pressure</label>
+<label id='l_16_D'><input type='radio' name='q16' onclick="choose(16,'D','D')">D. High blood pressure</label>
+<label id='l_16_C'><input type='radio' name='q16' onclick="choose(16,'C','D')">C. Low blood sugar</label>
+<label id='l_16_B'><input type='radio' name='q16' onclick="choose(16,'B','D')">B. High blood sugar</label>
+<div class='exp' id='exp_16'><b>Đáp án đúng:</b> D<br>Hypertension là thuật ngữ y khoa chỉ tăng huyết áp.</div></div>
+<div class='q' id='q17'><b>Câu 77. “Postoperative” care occurs:</b>
+<label id='l_17_B'><input type='radio' name='q17' onclick="choose(17,'B','A')">B. During surgery</label>
+<label id='l_17_D'><input type='radio' name='q17' onclick="choose(17,'D','A')">D. Instead of surgery</label>
+<label id='l_17_C'><input type='radio' name='q17' onclick="choose(17,'C','A')">C. Before surgery</label>
+<label id='l_17_A'><input type='radio' name='q17' onclick="choose(17,'A','A')">A. After surgery</label>
+<div class='exp' id='exp_17'><b>Đáp án đúng:</b> A<br>Tiền tố post- nghĩa là sau, postoperative là sau phẫu thuật.</div></div>
+<div class='q' id='q18'><b>Câu 78. Which verb is commonly used with “a drug” or “treatment”?</b>
+<label id='l_18_A'><input type='radio' name='q18' onclick="choose(18,'A','B')">A. Assess</label>
+<label id='l_18_B'><input type='radio' name='q18' onclick="choose(18,'B','B')">B. Administer</label>
+<label id='l_18_D'><input type='radio' name='q18' onclick="choose(18,'D','B')">D. Arrange</label>
+<label id='l_18_C'><input type='radio' name='q18' onclick="choose(18,'C','B')">C. Analyze</label>
+<div class='exp' id='exp_18'><b>Đáp án đúng:</b> B<br>Administer a drug/treatment nghĩa là cho thuốc/điều trị.</div></div>
+<div class='q' id='q19'><b>Câu 79. The opposite of “conscious” is:</b>
+<label id='l_19_D'><input type='radio' name='q19' onclick="choose(19,'D','A')">D. Aconscious</label>
+<label id='l_19_C'><input type='radio' name='q19' onclick="choose(19,'C','A')">C. Disconscious</label>
+<label id='l_19_B'><input type='radio' name='q19' onclick="choose(19,'B','A')">B. Inconscious</label>
+<label id='l_19_A'><input type='radio' name='q19' onclick="choose(19,'A','A')">A. Unconscious</label>
+<div class='exp' id='exp_19'><b>Đáp án đúng:</b> A<br>Unconscious là từ chuẩn chỉ tình trạng mất ý thức.</div></div>
+<div class='q' id='q20'><b>Câu 80. A “compound fracture” means the bone:</b>
+<label id='l_20_D'><input type='radio' name='q20' onclick="choose(20,'D','B')">D. Is broken in multiple places</label>
+<label id='l_20_B'><input type='radio' name='q20' onclick="choose(20,'B','B')">B. Protrudes through the skin</label>
+<label id='l_20_A'><input type='radio' name='q20' onclick="choose(20,'A','B')">A. Is bent but not broken</label>
+<label id='l_20_C'><input type='radio' name='q20' onclick="choose(20,'C','B')">C. Is cracked but not broken</label>
+<div class='exp' id='exp_20'><b>Đáp án đúng:</b> B<br>Compound fracture là gãy hở, xương xuyên qua da.</div></div>
+<div class='q' id='q21'><b>Câu 81. The doctor advised the patient ______ weight.</b>
+<label id='l_21_A'><input type='radio' name='q21' onclick="choose(21,'A','B')">A. losing</label>
+<label id='l_21_C'><input type='radio' name='q21' onclick="choose(21,'C','B')">C. lose</label>
+<label id='l_21_D'><input type='radio' name='q21' onclick="choose(21,'D','B')">D. lost</label>
+<label id='l_21_B'><input type='radio' name='q21' onclick="choose(21,'B','B')">B. to lose</label>
+<div class='exp' id='exp_21'><b>Đáp án đúng:</b> B<br>Cấu trúc chuẩn advise + someone + to + V.</div></div>
+<div class='q' id='q22'><b>Câu 82. Which cavity contains the lungs?</b>
+<label id='l_22_B'><input type='radio' name='q22' onclick="choose(22,'B','D')">B. Abdominal</label>
+<label id='l_22_D'><input type='radio' name='q22' onclick="choose(22,'D','D')">D. Thoracic</label>
+<label id='l_22_A'><input type='radio' name='q22' onclick="choose(22,'A','D')">A. Spinal</label>
+<label id='l_22_C'><input type='radio' name='q22' onclick="choose(22,'C','D')">C. Pelvic</label>
+<div class='exp' id='exp_22'><b>Đáp án đúng:</b> D<br>Phổi nằm trong lồng ngực (thoracic cavity).</div></div>
+<div class='q' id='q23'><b>Câu 83. The medical term for the “collar bone” is:</b>
+<label id='l_23_B'><input type='radio' name='q23' onclick="choose(23,'B','C')">B. Scapula</label>
+<label id='l_23_C'><input type='radio' name='q23' onclick="choose(23,'C','C')">C. Clavicle</label>
+<label id='l_23_A'><input type='radio' name='q23' onclick="choose(23,'A','C')">A. Sternum</label>
+<label id='l_23_D'><input type='radio' name='q23' onclick="choose(23,'D','C')">D. Humerus</label>
+<div class='exp' id='exp_23'><b>Đáp án đúng:</b> C<br>Clavicle là thuật ngữ y khoa của xương đòn.</div></div>
+<div class='q' id='q24'><b>Câu 84. “Orthopnea” means breathing is easier when:</b>
+<label id='l_24_A'><input type='radio' name='q24' onclick="choose(24,'A','C')">A. Walking</label>
+<label id='l_24_B'><input type='radio' name='q24' onclick="choose(24,'B','C')">B. Sleeping</label>
+<label id='l_24_D'><input type='radio' name='q24' onclick="choose(24,'D','C')">D. Lying flat</label>
+<label id='l_24_C'><input type='radio' name='q24' onclick="choose(24,'C','C')">C. Sitting upright</label>
+<div class='exp' id='exp_24'><b>Đáp án đúng:</b> C<br>Orthopnea là khó thở khi nằm, đỡ khi ngồi dậy, hay gặp trong suy tim.</div></div>
+<div class='q' id='q25'><b>Câu 85. “Dialysis” is used when which organ fails?</b>
+<label id='l_25_C'><input type='radio' name='q25' onclick="choose(25,'C','D')">C. Liver</label>
+<label id='l_25_B'><input type='radio' name='q25' onclick="choose(25,'B','D')">B. Heart</label>
+<label id='l_25_A'><input type='radio' name='q25' onclick="choose(25,'A','D')">A. Lungs</label>
+<label id='l_25_D'><input type='radio' name='q25' onclick="choose(25,'D','D')">D. Kidneys</label>
+<div class='exp' id='exp_25'><b>Đáp án đúng:</b> D<br>Dialysis là lọc máu thay thế chức năng thận.</div></div>
+<div class='q' id='q26'><b>Câu 86. “Palpation” involves:</b>
+<label id='l_26_A'><input type='radio' name='q26' onclick="choose(26,'A','B')">A. Looking</label>
+<label id='l_26_C'><input type='radio' name='q26' onclick="choose(26,'C','B')">C. Listening</label>
+<label id='l_26_B'><input type='radio' name='q26' onclick="choose(26,'B','B')">B. Touching</label>
+<label id='l_26_D'><input type='radio' name='q26' onclick="choose(26,'D','B')">D. Tapping</label>
+<div class='exp' id='exp_26'><b>Đáp án đúng:</b> B<br>Palpation nghĩa là sờ nắn trong thăm khám lâm sàng.</div></div>
+<div class='q' id='q27'><b>Câu 87. A “pathogen” is:</b>
+<label id='l_27_D'><input type='radio' name='q27' onclick="choose(27,'D','B')">D. Beneficial bacteria</label>
+<label id='l_27_A'><input type='radio' name='q27' onclick="choose(27,'A','B')">A. Surgical instrument</label>
+<label id='l_27_C'><input type='radio' name='q27' onclick="choose(27,'C','B')">C. White blood cell</label>
+<label id='l_27_B'><input type='radio' name='q27' onclick="choose(27,'B','B')">B. Disease-causing microorganism</label>
+<div class='exp' id='exp_27'><b>Đáp án đúng:</b> B<br>Pathogen là vi sinh vật gây bệnh.</div></div>
+<div class='q' id='q28'><b>Câu 88. “Congenital” means:</b>
+<label id='l_28_C'><input type='radio' name='q28' onclick="choose(28,'C','B')">C. Acquired later</label>
+<label id='l_28_D'><input type='radio' name='q28' onclick="choose(28,'D','B')">D. Contagious</label>
+<label id='l_28_B'><input type='radio' name='q28' onclick="choose(28,'B','B')">B. Present at birth</label>
+<label id='l_28_A'><input type='radio' name='q28' onclick="choose(28,'A','B')">A. Caused by accident</label>
+<div class='exp' id='exp_28'><b>Đáp án đúng:</b> B<br>Congenital là bệnh/tình trạng có từ khi sinh ra.</div></div>
+<div class='q' id='q29'><b>Câu 89. Which organ produces bile?</b>
+<label id='l_29_C'><input type='radio' name='q29' onclick="choose(29,'C','D')">C. Pancreas</label>
+<label id='l_29_D'><input type='radio' name='q29' onclick="choose(29,'D','D')">D. Liver</label>
+<label id='l_29_A'><input type='radio' name='q29' onclick="choose(29,'A','D')">A. Appendix</label>
+<label id='l_29_B'><input type='radio' name='q29' onclick="choose(29,'B','D')">B. Stomach</label>
+<div class='exp' id='exp_29'><b>Đáp án đúng:</b> D<br>Gan sản xuất mật, túi mật chỉ có chức năng dự trữ.</div></div>
+<div class='q' id='q30'><b>Câu 90. Which condition is characterized by “porous bones”?</b>
+<label id='l_30_A'><input type='radio' name='q30' onclick="choose(30,'A','C')">A. Osteomyelitis</label>
+<label id='l_30_C'><input type='radio' name='q30' onclick="choose(30,'C','C')">C. Osteoporosis</label>
+<label id='l_30_B'><input type='radio' name='q30' onclick="choose(30,'B','C')">B. Osteoarthritis</label>
+<label id='l_30_D'><input type='radio' name='q30' onclick="choose(30,'D','C')">D. Osteosarcoma</label>
+<div class='exp' id='exp_30'><b>Đáp án đúng:</b> C<br>Osteoporosis là loãng xương, làm xương xốp và dễ gãy.</div></div>
+<div id='score'>Đúng: 0 / 30 | Đã làm: 0/30</div></body></html>
